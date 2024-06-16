@@ -1,0 +1,3196 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://fahad-maqbool.github.io/SEOOnt"
+     xml:base="https://fahad-maqbool.github.io/SEOOnt"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-20="https://fahad-maqbool.github.io/SEOOnt#">
+    <owl:Ontology rdf:about="https://fahad-maqbool.github.io/SEOOnt">
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#establishesSeoFriendlyStructureFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#establishesSeoFriendlyStructureFor">
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#isSeoFriendlyStructureEstablishedBy"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of establishing an SEO-friendly structure for a website or content.</rdfs:comment>
+        <rdfs:label>establishesSeoFriendlyStructureFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#fixDuplicateContentOf -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#fixDuplicateContentOf">
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#hasDuplicateContentFixedBy"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of fixing duplicate content issues for a website or content.</rdfs:comment>
+        <rdfs:label>fixDuplicateContentOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasArticlesSubmittedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasArticlesSubmittedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#submitArticlesFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ArticlePage"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:comment>Indicates the PublicRelations entity that has submitted articles for the given Article.
+</rdfs:comment>
+        <rdfs:label>hasArticlesSubmittedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasBlogPostedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasBlogPostedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#postsBlogFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:comment>Indicates the ContentMarketing entity that has posted a blog for the given BlogPost.
+</rdfs:comment>
+        <rdfs:label>hasBlogPostedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasContentOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasContentOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizeContentFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the ContentMarketing entity that has optimized the given Content.
+.</rdfs:comment>
+        <rdfs:label>hasContentOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasDuplicateContentFixedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasDuplicateContentFixedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:comment>Indicates the TechnicalSEO entity that has fixed duplicate content issues for the given Content.
+</rdfs:comment>
+        <rdfs:label>hasDuplicateContentFixedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasGoogleBusinessProfileOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasGoogleBusinessProfileOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesGoogleBusinessProfileOf"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:comment>Indicates the LocalSEO entity that has optimized the Google Business Profile for the given Business.
+</rdfs:comment>
+        <rdfs:label>hasGoogleBusinessProfileOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasInternalLinkingOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasInternalLinkingOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesInternalLinkingFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the OnPageOptimization entity that has optimized internal linking for the given Website.
+</rdfs:comment>
+        <rdfs:label>hasInternalLinkingOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasLocalAudienceTargetedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasLocalAudienceTargetedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#targetLocalAudienceFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:comment>Indicates the LocalSEO entity that has targeted the local audience for the given LocalAudience.
+</rdfs:comment>
+        <rdfs:label>hasLocalAudienceTargetedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasLocalVisibilityIncreasedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasLocalVisibilityIncreasedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#increasesLocalVisibilityOf"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:comment>Indicates the LocalSEO entity that has increased the local visibility for the given Business.
+</rdfs:comment>
+        <rdfs:label>hasLocalVisibilityIncreasedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasPageSpeedOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasPageSpeedOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesPageSpeedFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the SiteSpeedOptimization entity that has optimized the page speed for the given Webpage.
+</rdfs:comment>
+        <rdfs:label>hasPageSpeedOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasSchemaMarkupOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasSchemaMarkupOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesSchemaMarkupFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the TechnicalSEO entity that has optimized the schema markup for the given Website.
+</rdfs:comment>
+        <rdfs:label>hasSchemaMarkupOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasSocialNetworkingUtilizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasSocialNetworkingUtilizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#utilizesSocialNetworkingFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:comment>Indicates the SocialMediaLinks entity that has utilized social networking for the given Promotion.
+</rdfs:comment>
+        <rdfs:label>hasSocialNetworkingUtilizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasSpeedImprovedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasSpeedImprovedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#improvesSpeedOf"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:comment>Indicates the SiteSpeedOptimization entity that has improved the speed for the given Website.
+</rdfs:comment>
+        <rdfs:label>hasSpeedImprovedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasTitletagOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasTitletagOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizeTitletagFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the OnPageOptimization entity that has optimized the title tag for the given Webpage.
+</rdfs:comment>
+        <rdfs:label>hasTitletagOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasUrlsOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasUrlsOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesUrlsFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the TechnicalSEO entity that has optimized the URLs for the given Website.
+</rdfs:comment>
+        <rdfs:label>hasUrlsOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasUserEngagementOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasUserEngagementOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesUserEngagementFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the UserExperienceOptimization entity that has optimized user engagement for the given Website.
+</rdfs:comment>
+        <rdfs:label>hasUserEnagagementOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#hasVideoSubmissionPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#hasVideoSubmissionPerformedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#performVideoSubmissionFor"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:comment>Indicates the ContentMarketing entity that has performed video submission for the given MultimediaContent.
+</rdfs:comment>
+        <rdfs:label>hasVideoSubmissionPerformedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#improvesSpeedOf -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#improvesSpeedOf">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of improving the speed of a website or content.</rdfs:comment>
+        <rdfs:label>improvesSpeedOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#increasesLocalVisibilityOf -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#increasesLocalVisibilityOf">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of increasing the local visibility of a website or business.</rdfs:comment>
+        <rdfs:label>increaseLocalVisibilityOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#involvesPressReleaseFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#involvesPressReleaseFor">
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#isPressReleaseInvolvedBy"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of involving a press release for a specific purpose or content.</rdfs:comment>
+        <rdfs:label>involvesPressReleaseFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#isOptimizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#isOptimizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizes"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Indicates the SEO entity that has optimized the given Webpage.
+</rdfs:comment>
+        <rdfs:label>isOptimizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#isPressReleaseInvolvedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#isPressReleaseInvolvedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:comment>Indicates the OffPageOptimization entity that has involved a press release for the given Website.
+</rdfs:comment>
+        <rdfs:label>isPressReleaseInvolvedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#isSeoFriendlyStructureEstablishedBy -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#isSeoFriendlyStructureEstablishedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:comment>Indicates the TechnicalSEO entity that has established a SEO-friendly structure for the given Website.</rdfs:comment>
+        <rdfs:label>isSeoFriendlyStructureEstablishedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizeContentFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizeContentFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing content for a specific purpose, audience, or search engine.</rdfs:comment>
+        <rdfs:label>optimizeContentFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizeTitletagFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizeTitletagFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing a title tag for a website or content.</rdfs:comment>
+        <rdfs:label>optimizeTitletagFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizes -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizes">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures"/>
+        <rdfs:comment>Represents the action of optimizing a website, content, or element.</rdfs:comment>
+        <rdfs:label>optimizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizesGoogleBusinessProfileOf -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizesGoogleBusinessProfileOf">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing a Google Business Profile for a business.</rdfs:comment>
+        <rdfs:label>optimizesGoogleBusinessProfileOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizesInternalLinkingFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizesInternalLinkingFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing internal linking for a website.</rdfs:comment>
+        <rdfs:label>optimizesInternalLinkingFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizesPageSpeedFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizesPageSpeedFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing page speed for a website.</rdfs:comment>
+        <rdfs:label>optimizesPageSpeedFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizesSchemaMarkupFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizesSchemaMarkupFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing schema markup for a website.</rdfs:comment>
+        <rdfs:label>optimizesSchemaMarkupFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizesUrlsFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizesUrlsFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing URLs for a website or content.</rdfs:comment>
+        <rdfs:label>optimizesUrlsFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizesUserEngagementFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizesUserEngagementFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of optimizing user engagement for a website or content.</rdfs:comment>
+        <rdfs:label>optimizesUserEngagementFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#performVideoSubmissionFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#performVideoSubmissionFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of performing video submission for a website or content.</rdfs:comment>
+        <rdfs:label>performVideoSubmissionFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#postsBlogFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#postsBlogFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of posting a blog for a website or content.</rdfs:comment>
+        <rdfs:label>postsBlogFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#submitArticlesFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#submitArticlesFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ArticlePage"/>
+        <rdfs:comment>Represents the action of submitting articles for a website or publication.</rdfs:comment>
+        <rdfs:label>submitArticlesFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#targetLocalAudienceFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#targetLocalAudienceFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of targeting a local audience for a website or business.</rdfs:comment>
+        <rdfs:label>targetLocalAudienceFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#utilizesSocialNetworkingFor -->
+
+    <owl:ObjectProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#utilizesSocialNetworkingFor">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Represents the action of utilizing social networking for a specific purpose or content.</rdfs:comment>
+        <rdfs:label>utilizesSocialNetworkingFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ageGroup -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#ageGroup">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TrafficDemographics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the age group of the target audience.</rdfs:comment>
+        <rdfs:label>ageGroup
+</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#anchorText -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#anchorText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AnchorText"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the visible, clickable text in a hyperlink.</rdfs:comment>
+        <rdfs:label>anchorText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#articleContent -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#articleContent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ArticlePage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the main text or body of an article.</rdfs:comment>
+        <rdfs:label>articleContent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#articleTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#articleTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ArticlePage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the title of an article.</rdfs:comment>
+        <rdfs:label>articleTitle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#articles -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#articles">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#InformationalWebsite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a collection of written works or articles.</rdfs:comment>
+        <rdfs:label>articles</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#authorName -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#authorName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ArticlePage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the name of the author who wrote the content.</rdfs:comment>
+        <rdfs:label>authorName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#authority -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#authority">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Represents the perceived credibility and influence of a website.</rdfs:comment>
+        <rdfs:label>authority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#backLinkQuality -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#backLinkQuality">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the quality of a backlink in terms of relevance and authority.</rdfs:comment>
+        <rdfs:label>backLinkQuality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#backlinkTypes -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#backlinkTypes">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the different types of backlinks.</rdfs:comment>
+        <rdfs:label>backlinkTypes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#bounceRate -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#bounceRate">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the percentage of visitors who leave the site after viewing only one page.</rdfs:comment>
+        <rdfs:label>bounceRate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#callToAction -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#callToAction">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LandingPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a prompt to encourage an immediate response or action from the audience.</rdfs:comment>
+        <rdfs:label>callToAction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#categoryDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#categoryDescription">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CategoryPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a description of the category.</rdfs:comment>
+        <rdfs:label>categoryDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#categoryName -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#categoryName">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CategoryPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the name of the category.</rdfs:comment>
+        <rdfs:label>categoryName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#categoryPage -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#categoryPage">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CategoryPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a web page that lists items or articles within a category.</rdfs:comment>
+        <rdfs:label>categoryPage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#companyHistory -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#companyHistory">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AboutUsPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents information about the history of a company.</rdfs:comment>
+        <rdfs:label>companyHistory</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#contactForm -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#contactForm">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ContactPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a form used for contacting the organization or website owner.</rdfs:comment>
+        <rdfs:label>contactForm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#contactInformation -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#contactInformation">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ContactPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents information to contact the organization or individual.</rdfs:comment>
+        <rdfs:label>contactInformation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#contentQuality -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#contentQuality">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ContentAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the quality of the content based on various metrics.</rdfs:comment>
+        <rdfs:label>contentQuality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#contentRelevance -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#contentRelevance">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ContentAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Represents how relevant the content is to the target audience or search query.</rdfs:comment>
+        <rdfs:label>contentRelevance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#conversionRatio -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#conversionRatio">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OrganicTrafficConversions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Represents the ratio of visitors who take a desired action to the total number of visitors.</rdfs:comment>
+        <rdfs:label>conversionRatio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#directoryCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#directoryCategory">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#DirectoryLinks"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the category in a directory.</rdfs:comment>
+        <rdfs:label>directoryCategory</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#domainAuthority -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#domainAuthority">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EditorialLinks"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents a measure of the overall strength of a domain.</rdfs:comment>
+        <rdfs:label>domainAuthority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#domainCategories -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#domainCategories">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the categories associated with a domain.</rdfs:comment>
+        <rdfs:label>domainCategories</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#domainName -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#domainName">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the name of the domain.</rdfs:comment>
+        <rdfs:label>domainName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#domainRating -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#domainRating">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents a score indicating the authority of a domain.</rdfs:comment>
+        <rdfs:label>domainRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#errorMassage -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#errorMassage">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#404ErrorPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a message indicating an error.</rdfs:comment>
+        <rdfs:label>errorMessage
+</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#eventDate -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#eventDate">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EventPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Represents the date of the event.</rdfs:comment>
+        <rdfs:label>eventDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#eventDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#eventDescription">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EventPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a description of the event.</rdfs:comment>
+        <rdfs:label>eventDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#eventLocation -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#eventLocation">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EventPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the location where the event is held.</rdfs:comment>
+        <rdfs:label>eventLocation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#eventTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#eventTitle">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EventPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the title of the event.</rdfs:comment>
+        <rdfs:label>eventTitle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#faqSections -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#faqSections">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#FAQPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents sections containing frequently asked questions.</rdfs:comment>
+        <rdfs:label>faqSections</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#forumCategories -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#forumCategories">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ForumPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents categories within a forum.</rdfs:comment>
+        <rdfs:label>forumCategories</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#forumTopic -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#forumTopic">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ForumLinks"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a topic discussed in a forum.</rdfs:comment>
+        <rdfs:label>forumTopic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#genderSegment -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#genderSegment">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TrafficDemographics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a segment of the audience based on gender.</rdfs:comment>
+        <rdfs:label>genderSegment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#generatedBacklink -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#generatedBacklink">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents a backlink that has been generated.</rdfs:comment>
+        <rdfs:label>generatedBacklink</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#groups -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#groups">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SocialNetworkingWebsites"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a collection of people or items grouped together.</rdfs:comment>
+        <rdfs:label>groups</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#inboundTraffic -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#inboundTraffic">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents traffic coming into a website.</rdfs:comment>
+        <rdfs:label>inboundTraffic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#indexedPagesURLs -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#indexedPagesURLs">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#IndexedPages"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents URLs of pages that are indexed by search engines.</rdfs:comment>
+        <rdfs:label>indexedPagesURLs</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#instructer -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#instructer">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EducationalWebsites"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a person who teaches or instructs.</rdfs:comment>
+        <rdfs:label>instructer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#keyword -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#keyword">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#KeywordRankings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a word or phrase used in search queries.</rdfs:comment>
+        <rdfs:label>keyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#keywordDensity -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#keywordDensity">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#KeywordAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Represents the frequency of a keyword in content compared to the total word count.</rdfs:comment>
+        <rdfs:label>keywordDensity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#keywordRankingValue -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#keywordRankingValue">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#KeywordRanking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the value indicating the ranking of a keyword in search results.</rdfs:comment>
+        <rdfs:label>keywordRankingValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#keywordsCount -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#keywordsCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the number of keywords.</rdfs:comment>
+        <rdfs:label>keywordsCount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#keywordsTraffic -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#keywordsTraffic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the amount of traffic generated by specific keywords.</rdfs:comment>
+        <rdfs:label>keywordsTraffic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#latestUpdate -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#latestUpdate">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#HomePage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the most recent update.</rdfs:comment>
+        <rdfs:label>latestUpdate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#leadCaptureForm -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#leadCaptureForm">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LandingPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Represents a form used to capture leads.</rdfs:comment>
+        <rdfs:label>leadCaptureForm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#linkingValue -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#linkingValue">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the value of a link in terms of SEO.</rdfs:comment>
+        <rdfs:label>linkingValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#linkingWebsites -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#linkingWebsites">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents websites that provide backlinks.</rdfs:comment>
+        <rdfs:label>linkingWebsites</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#links -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#links">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Follow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents connections from one webpage to another.</rdfs:comment>
+        <rdfs:label>links</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#loginForm -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#loginForm">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LoginPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Represents a form used for user login.</rdfs:comment>
+        <rdfs:label>loginForm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#loginOptions -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#loginOptions">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LoginPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents different options available for logging in.</rdfs:comment>
+        <rdfs:label>loginOptions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#mapLocation -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#mapLocation">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ContactPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the location on a map.</rdfs:comment>
+        <rdfs:label>mapLocation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#missionStatement -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#missionStatement">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AboutUsPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a statement outlining the mission of an organization.</rdfs:comment>
+        <rdfs:label>missionStatement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#mobileOptimization -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#mobileOptimization">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Represents optimizing a website for mobile devices.</rdfs:comment>
+        <rdfs:label>mobileOptimization</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#networks -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#networks">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents groups or systems of interconnected people or things.</rdfs:comment>
+        <rdfs:label>networks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#numberOfBacklinks -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#numberOfBacklinks">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the total number of backlinks a website has.</rdfs:comment>
+        <rdfs:label>numberOfBacklinks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedArticleSubmission -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedArticleSubmission">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents submitting articles that are optimized for SEO.</rdfs:comment>
+        <rdfs:label>optimizedArticleSubmission</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedBlogPost -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedBlogPost">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a blog post that is optimized for search engines.</rdfs:comment>
+        <rdfs:label>optimizedBlogPost</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedContent -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedContent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents content that is optimized for search engines.</rdfs:comment>
+        <rdfs:label>optimizedContent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedHeader -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedHeader">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a header that is optimized for SEO.</rdfs:comment>
+        <rdfs:label>optimizedHeader</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedInternalLinking -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedInternalLinking">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents internal links that are optimized for SEO.</rdfs:comment>
+        <rdfs:label>optimizedInternalLinking</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedMetaDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedMetaDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a meta description that is optimized for SEO.</rdfs:comment>
+        <rdfs:label>optimizedMetaDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedPageSpeed -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedPageSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the speed of a webpage that is optimized.</rdfs:comment>
+        <rdfs:label>optimizedPageSpeed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedSchemaMarkup -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedSchemaMarkup">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents schema markup that is optimized for SEO.</rdfs:comment>
+        <rdfs:label>optimizedSchemaMarkup</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedSearchEngineResultPage -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedSearchEngineResultPage">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents search engine results pages that are optimized.</rdfs:comment>
+        <rdfs:label>optimizedSearchEngineResultPage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedTitleTag -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedTitleTag">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a title tag that is optimized for SEO.</rdfs:comment>
+        <rdfs:label>optimizedTitleTag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#optimizedUrls -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#optimizedUrls">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents URLs that are optimized for search engines.</rdfs:comment>
+        <rdfs:label>optimizedUrls</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#organicCompetitors -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#organicCompetitors">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents competitors in organic search results.</rdfs:comment>
+        <rdfs:label>organicCompetitors</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#organicTraffic -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#organicTraffic">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OrganicTraffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents traffic that comes from organic search results.</rdfs:comment>
+        <rdfs:label>organicTraffic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#pageLoadTime -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#pageLoadTime">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Represents the time it takes for a webpage to load.</rdfs:comment>
+        <rdfs:label>pageLoadTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#paidTraffic -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#paidTraffic">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PaidTraffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents traffic that comes from paid advertisements.</rdfs:comment>
+        <rdfs:label>paidTraffic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#performenceScore -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#performenceScore">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#WebsitePerformanceStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents a score that measures the performance of a website.</rdfs:comment>
+        <rdfs:label>performenceScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#platform -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#platform">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SocialNetworkingWebsites"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the base framework or technology used.</rdfs:comment>
+        <rdfs:label>platform</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#policyEffectiveDate -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#policyEffectiveDate">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PrivacyPolicyPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Represents the date when a policy becomes effective.</rdfs:comment>
+        <rdfs:label>policyEffectiveDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#projectShowcased -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#projectShowcased">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PortfolioWebsites"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a project that is showcased.</rdfs:comment>
+        <rdfs:label>projectShowcased</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#promotionalOffers -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#promotionalOffers">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LandingPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents offers used for promotion.</rdfs:comment>
+        <rdfs:label>promotionalOffers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#publishers -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#publishers">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents entities that publish content.</rdfs:comment>
+        <rdfs:label>publishers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#rankingPosition -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#rankingPosition">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#KeywordRankings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the position of a website or content in search results.</rdfs:comment>
+        <rdfs:label>rankingPostion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#redirectURL -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#redirectURL">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#404ErrorPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a URL that redirects to another URL.</rdfs:comment>
+        <rdfs:label>redirectURL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#referringDomainCount -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#referringDomainCount">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the number of unique domains that link to a website.</rdfs:comment>
+        <rdfs:label>referringDomainCount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#referringWebsites -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#referringWebsites">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents websites that refer traffic to another website.</rdfs:comment>
+        <rdfs:label>referringWebsites</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#relatedProducts -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#relatedProducts">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CategoryPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents products related to the current content or product.</rdfs:comment>
+        <rdfs:label>relatedProducts</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#relatedTopics -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#relatedTopics">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#FAQPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents topics related to the current content.</rdfs:comment>
+        <rdfs:label>relatedTopics</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#relevance -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#relevance">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Represents the relevance of content to a specific topic or query.</rdfs:comment>
+        <rdfs:label>relevance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#rootDomain -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#rootDomain">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the primary domain of a website.</rdfs:comment>
+        <rdfs:label>rootDomain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#searchEngineResultPage -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#searchEngineResultPage">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#KeywordRanking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the pages of search results returned by search engines.</rdfs:comment>
+        <rdfs:label>searchEngineResultPage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#searchQuery -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#searchQuery">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SearchResultPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents a query used in search engines.</rdfs:comment>
+        <rdfs:label>searchQuery</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#searchResult -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#searchResult">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SearchResultPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the result returned by a search engine.</rdfs:comment>
+        <rdfs:label>searchResult</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#searchTraffic -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#searchTraffic">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents traffic that comes from search engines.</rdfs:comment>
+        <rdfs:label>searchTraffic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#shippingRegions -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#shippingRegions">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EcommerceWebsite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the regions where shipping is available.</rdfs:comment>
+        <rdfs:label>shippingRegions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#socialNetworkDistribution -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#socialNetworkDistribution">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the distribution of traffic or engagement across social networks.</rdfs:comment>
+        <rdfs:label>socialNetworkDistribution</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#sponsors -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#sponsors">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PromotionalLinks"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents entities that sponsor content or events.</rdfs:comment>
+        <rdfs:label>sponsors</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#subjects -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#subjects">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EducationalWebsites"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the subjects or topics covered by the content.</rdfs:comment>
+        <rdfs:label>subjects</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#suggestedLinks -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#suggestedLinks">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkTypes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents links suggested for further reading or exploration.</rdfs:comment>
+        <rdfs:label>suggestedLinks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#targetKeyword -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#targetKeyword">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#KeywordAnalysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the primary keyword targeted by the content.</rdfs:comment>
+        <rdfs:label>targetKeyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#teamInformation -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#teamInformation">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AboutUsPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents information about the team members.</rdfs:comment>
+        <rdfs:label>teamInformation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#threadTopics -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#threadTopics">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ForumPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents topics discussed in a thread.</rdfs:comment>
+        <rdfs:label>threadTopics</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#topCategories -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#topCategories">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the most prominent or popular categories.</rdfs:comment>
+        <rdfs:label>topCategories</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#topPublishers -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#topPublishers">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the leading publishers in a specific area.</rdfs:comment>
+        <rdfs:label>topPublishers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#topReferrals -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#topReferrals">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the top referral sources driving traffic to the website.</rdfs:comment>
+        <rdfs:label>topReferrals</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#topTopics -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#topTopics">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the most important or frequently covered topics.</rdfs:comment>
+        <rdfs:label>topTopics</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#topicsCovered -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#topicsCovered">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#InformationalWebsite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the topics covered by the content.</rdfs:comment>
+        <rdfs:label>topicsCovered</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#trafficSources -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#trafficSources">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the sources from which traffic is coming to the website.</rdfs:comment>
+        <rdfs:label>trafficSources</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#trafficVolume -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#trafficVolume">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the total volume of traffic to the website.</rdfs:comment>
+        <rdfs:label>trafficVolume</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#users -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#users">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SocialNetworkingWebsites"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the users who visit or interact with the website.</rdfs:comment>
+        <rdfs:label>users</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#visibilityScore -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#visibilityScore">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SearchVisibility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents a score indicating how visible a website is in search results.</rdfs:comment>
+        <rdfs:label>visibilityScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#visitValue -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#visitValue">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Analytics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the value derived from each visit to the website.</rdfs:comment>
+        <rdfs:label>visitValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#volume -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#volume">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the amount or quantity of something, such as traffic or content.</rdfs:comment>
+        <rdfs:label>volume</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#websiteURL -->
+
+    <owl:DatatypeProperty rdf:about="https://fahad-maqbool.github.io/SEOOnt#websiteURL">
+        <rdfs:domain rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the URL of a website.</rdfs:comment>
+        <rdfs:label>websiteURL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#AboutUsPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#AboutUsPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page providing information about the organization.</rdfs:comment>
+        <rdfs:label>AboutUsPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Analytics -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Analytics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Represents the analysis of data to gain insights into SEO performance.</rdfs:comment>
+        <rdfs:label>Analytics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#AnchorText -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#AnchorText">
+        <rdfs:comment>The visible, clickable text in a hyperlink, which is crucial for SEO and link-building strategies.</rdfs:comment>
+        <rdfs:label>AnchorText</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ArticlePage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ArticlePage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page containing articles or blog posts.</rdfs:comment>
+        <rdfs:label>ArticlePage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalysis -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalysis">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+        <rdfs:comment>Analysis of competitors&apos; backlinks.</rdfs:comment>
+        <rdfs:label>BacklinkAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalytics -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalytics">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Analytics"/>
+        <rdfs:comment>Analysis of backlinks pointing to a website.</rdfs:comment>
+        <rdfs:label>BacklinkAnalytics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#BrokenLinkBuilding -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#BrokenLinkBuilding">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies"/>
+        <rdfs:comment>Strategy of finding broken links and suggesting replacements.</rdfs:comment>
+        <rdfs:label>BrokenLinkBuilding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#CategoryPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#CategoryPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page displaying a list of articles or products by category.</rdfs:comment>
+        <rdfs:label>CategoryPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#CommentLinks -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#CommentLinks">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>links contribute to relationship building</rdfs:comment>
+        <rdfs:label>CommentLinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#CommercialKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#CommercialKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PrimaryKeywords"/>
+        <rdfs:comment>Keywords used primarily for commercial purposes.</rdfs:comment>
+        <rdfs:label>CommercialKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis">
+        <rdfs:comment>The process of evaluating and analyzing competitors&apos; SEO strategies and performance.</rdfs:comment>
+        <rdfs:label>CompetitorAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#CompetitorsKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#CompetitorsKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SecondaryKeywords"/>
+        <owl:disjointWith rdf:resource="https://fahad-maqbool.github.io/SEOOnt#IntentBasedKeywords"/>
+        <rdfs:comment>Keywords targeting competitors.</rdfs:comment>
+        <rdfs:label>CompetitorsKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ContactPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ContactPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page with contact information and forms.</rdfs:comment>
+        <rdfs:label>ContactPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Content -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Content">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#postsBlogFor"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#submitArticlesFor"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Represents any form of information or media available on a website, essential for SEO optimization.</rdfs:comment>
+        <rdfs:label>Content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ContentAnalysis -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ContentAnalysis">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+        <rdfs:comment>Analysis of competitors&apos; content strategies.</rdfs:comment>
+        <rdfs:label>ContentAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ContentMarketing -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ContentMarketing">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies"/>
+        <rdfs:comment>Creating valuable content to attract backlinks.</rdfs:comment>
+        <rdfs:label>ContentMarketing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ConversionRateOptimization -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ConversionRateOptimization">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Methods to increase the percentage of visitors who take a desired action.</rdfs:comment>
+        <rdfs:label>ConversionRateOptimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#CoreWebVitals -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#CoreWebVitals">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Metrics related to page speed and user experience.</rdfs:comment>
+        <rdfs:label>CoreWebVitals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DirectoryLinks -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#DirectoryLinks">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links from web directories.</rdfs:comment>
+        <rdfs:label>DirectoryLinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DynamicContent -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#DynamicContent">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+        <rdfs:comment>Content that changes based on user interaction.</rdfs:comment>
+        <rdfs:label>DynamicContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#EcommerceWebsite -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#EcommerceWebsite">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Website designed for online shopping.</rdfs:comment>
+        <rdfs:label>EcommerceWebsite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#EditorialLinks -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#EditorialLinks">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links given naturally by other websites.</rdfs:comment>
+        <rdfs:label>EditorialLinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#EducationalWebsites -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#EducationalWebsites">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Websites providing educational content.</rdfs:comment>
+        <rdfs:label>EducationalWebsites</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#EmailOutreach -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#EmailOutreach">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies"/>
+        <rdfs:comment>Reaching out to webmasters via email to build links.</rdfs:comment>
+        <rdfs:label>EmailOutreach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#EventPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#EventPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page with details about events.</rdfs:comment>
+        <rdfs:label>EventPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ExternalAnchorText -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ExternalAnchorText">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AnchorText"/>
+        <rdfs:comment>Anchor text in links from other websites.</rdfs:comment>
+        <rdfs:label>ExternalAnchorText</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#FAQPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#FAQPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page with frequently asked questions and answers.</rdfs:comment>
+        <rdfs:label>FAQPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Follow -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Follow">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links that pass SEO value.</rdfs:comment>
+        <rdfs:label>Follow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ForumLinks -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ForumLinks">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links from forums and comments.</rdfs:comment>
+        <rdfs:label>ForumLinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ForumPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ForumPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page for community discussions and forums.</rdfs:comment>
+        <rdfs:label>ForumPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#GenericAnchorText -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#GenericAnchorText">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AnchorText"/>
+        <rdfs:comment>Non-specific anchor text such as &quot;click here&quot;.</rdfs:comment>
+        <rdfs:label>GenericAnchorText</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#HomePage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#HomePage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Main landing page of a website.
+.</rdfs:comment>
+        <rdfs:label>HomePage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#IndexCoverageErrors -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#IndexCoverageErrors">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Errors related to the indexing of website pages.</rdfs:comment>
+        <rdfs:label>IndexCoverageErrors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#IndexedPages -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#IndexedPages">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Number of pages indexed by search engines.</rdfs:comment>
+        <rdfs:label>IndexedPages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#InformationalKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#InformationalKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PrimaryKeywords"/>
+        <rdfs:comment>Keywords aimed at providing information.</rdfs:comment>
+        <rdfs:label>InformationalKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#InformationalWebsite -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#InformationalWebsite">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Websites providing informational content.</rdfs:comment>
+        <rdfs:label>InformationalWebsite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#IntentBasedKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#IntentBasedKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SecondaryKeywords"/>
+        <rdfs:comment>Keywords based on user intent.</rdfs:comment>
+        <rdfs:label>IntentBasedKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#InternalAnchorText -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#InternalAnchorText">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#AnchorText"/>
+        <rdfs:comment>Anchor text in links within the same website.</rdfs:comment>
+        <rdfs:label>InternalAnchorText</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#InternationalSEO -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#InternationalSEO">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+        <rdfs:comment>SEO strategies for targeting international audiences.</rdfs:comment>
+        <rdfs:label>InternationalSEO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#KeywordAnalysis -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#KeywordAnalysis">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+        <rdfs:comment>Analysis of competitors&apos; keyword usage.</rdfs:comment>
+        <rdfs:label>KeywordAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#KeywordRanking -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#KeywordRanking">
+        <rdfs:comment>Tracks the position of keywords in search engine results pages (SERPs).</rdfs:comment>
+        <rdfs:label>KeywordRanking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#KeywordRankings -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#KeywordRankings">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Rankings of keywords in search engine results.</rdfs:comment>
+        <rdfs:label>KeywordRankings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Keywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Keywords">
+        <rdfs:comment>Words or phrases that describe the content of a webpage and are used to improve search engine rankings.</rdfs:comment>
+        <rdfs:label>Keywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LandingPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LandingPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page designed for a specific marketing campaign.</rdfs:comment>
+        <rdfs:label>LandingPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies">
+        <rdfs:comment>Techniques used to acquire hyperlinks from other websites to improve SEO.</rdfs:comment>
+        <rdfs:label>LinkBuildingStrategies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Different methods of obtaining links, such as organic, paid, or reciprocal.</rdfs:comment>
+        <rdfs:label>LinkBuildingTypes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LinkTypes -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkTypes">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Various kinds of links, including internal, external, follow, and no-follow links.</rdfs:comment>
+        <rdfs:label>LinkTypes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LocalListing -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LocalListing">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+        <rdfs:comment>Listings of businesses or services in local directories.</rdfs:comment>
+        <rdfs:label>LocalListing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LocalSEO -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LocalSEO">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+        <rdfs:comment>SEO strategies for targeting local audiences.</rdfs:comment>
+        <rdfs:label>LocalSEO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LocalSearchRankingFactors -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LocalSearchRankingFactors">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+        <rdfs:comment>Elements that affect the ranking of a website in local search results.</rdfs:comment>
+        <rdfs:label>LocalSearchRankingFactors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LocalizedContent -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LocalizedContent">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+        <rdfs:comment>Content tailored for specific local audiences.</rdfs:comment>
+        <rdfs:label>LocalizedContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#LoginPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#LoginPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page for users to log in.</rdfs:comment>
+        <rdfs:label>LoginPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#MobileSEO -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#MobileSEO">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <owl:disjointWith rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SiteSpeedOptimization"/>
+        <rdfs:comment>Optimization strategies for mobile devices.</rdfs:comment>
+        <rdfs:label>MobileSEO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#MultimediaContent -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#MultimediaContent">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+        <rdfs:comment>Content including videos, images, and audio.</rdfs:comment>
+        <rdfs:label>MultimediaContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#NavigationalKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#NavigationalKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PrimaryKeywords"/>
+        <rdfs:comment>Keywords intended to navigate to specific pages or websites.</rdfs:comment>
+        <rdfs:label>NavigationalKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#NoFollow -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#NoFollow">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links that do not pass SEO value.</rdfs:comment>
+        <rdfs:label>NoFollow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+        <rdfs:comment>Optimization techniques performed outside of your website.</rdfs:comment>
+        <rdfs:label>OffPageOptimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+        <rdfs:comment>Optimization techniques performed on your website.</rdfs:comment>
+        <rdfs:label>OnPageOptimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#OrganicTraffic -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#OrganicTraffic">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:comment>Traffic that comes from search engines.</rdfs:comment>
+        <rdfs:label>OrganicTraffic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#OrganicTrafficConversions -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#OrganicTrafficConversions">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Conversions from organic search traffic.</rdfs:comment>
+        <rdfs:label>OrganicTrafficConversions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PaidTraffic -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PaidTraffic">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:comment>Traffic that comes from paid advertising.</rdfs:comment>
+        <rdfs:label>PaidTraffic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics">
+        <rdfs:comment>Metrics used to measure and evaluate the effectiveness of SEO efforts.</rdfs:comment>
+        <rdfs:label>PerformanceMetrics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PortfolioWebsites -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PortfolioWebsites">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Websites showcasing individual or company portfolios.</rdfs:comment>
+        <rdfs:label>PortfolioWebsites</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PrimaryKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PrimaryKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <owl:disjointWith rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SecondaryKeywords"/>
+        <rdfs:comment>Main keywords targeted in SEO strategy.</rdfs:comment>
+        <rdfs:label>PrimaryKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PrivacyPolicyPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PrivacyPolicyPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page outlining the website&apos;s privacy policy.</rdfs:comment>
+        <rdfs:label>PrivacyPolicyPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ProductPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ProductPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page displaying a specific product.</rdfs:comment>
+        <rdfs:label>ProductPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PromotionalLinks -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PromotionalLinks">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links from promotional content.</rdfs:comment>
+        <rdfs:label>PromotionalLinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#PublicRelations -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#PublicRelations">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies"/>
+        <rdfs:comment>Using PR strategies to gain high-quality backlinks.</rdfs:comment>
+        <rdfs:label>PublicRelations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#ReferringDomains -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Domains that link to your website.</rdfs:comment>
+        <rdfs:label>ReferringDomains</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#RichSnippets -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#RichSnippets">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures"/>
+        <rdfs:comment>Enhanced search results that include additional data like ratings and images.</rdfs:comment>
+        <rdfs:label>RichSnippets</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SEO -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SEO">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizes"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesInternalLinkingFor"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesPageSpeedFor"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#optimizesSchemaMarkupFor"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://fahad-maqbool.github.io/SEOOnt#performVideoSubmissionFor"/>
+                <owl:allValuesFrom rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Search Engine Optimization, a set of practices aimed at improving the visibility and ranking of a website in search engines.
+SERPFeatures</rdfs:comment>
+        <rdfs:label>SEO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SERPFeatures -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures">
+        <rdfs:comment>Various elements that appear on search engine results pages (SERPs), such as snippets, images, and videos.</rdfs:comment>
+        <rdfs:label>SERPFeatures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SearchResultPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SearchResultPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page displaying search results</rdfs:comment>
+        <rdfs:label>SearchResultPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SearchVisibility -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SearchVisibility">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Visibility of a website in search engine results.</rdfs:comment>
+        <rdfs:label>SearchVisibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SecondaryKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SecondaryKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <rdfs:comment>Additional keywords that support primary keywords.</rdfs:comment>
+        <rdfs:label>SecondaryKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SiteSpeedOptimization -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SiteSpeedOptimization">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+        <rdfs:comment>Techniques to improve the loading speed of a website.</rdfs:comment>
+        <rdfs:label>SiteSpeedOptimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SocialMediaLinks -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SocialMediaLinks">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+        <rdfs:comment>Links from social media platforms.</rdfs:comment>
+        <rdfs:label>SocialMediaLinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#SocialNetworkingWebsites -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#SocialNetworkingWebsites">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        <rdfs:comment>Websites designed for social networking.</rdfs:comment>
+        <rdfs:label>SocialNetworkingWebsites</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#StaticContent -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#StaticContent">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+        <rdfs:comment>Content that remains the same for all users.</rdfs:comment>
+        <rdfs:label>StaticContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#TechnicalAnalysis -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#TechnicalAnalysis">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+        <rdfs:comment>Analysis of competitors&apos; technical SEO elements.</rdfs:comment>
+        <rdfs:label>TechnicalAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+        <rdfs:comment>Technical aspects of SEO, such as site structure and speed.</rdfs:comment>
+        <rdfs:label>TechnicalSEO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#TextContent -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#TextContent">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+        <rdfs:comment>Content consisting primarily of text.</rdfs:comment>
+        <rdfs:label>TextContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Traffic -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Traffic">
+        <rdfs:comment>The visitors to a website, which can be analyzed to improve SEO strategies.</rdfs:comment>
+        <rdfs:label>Traffic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#TrafficDemographics -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#TrafficDemographics">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Analytics"/>
+        <rdfs:comment>Analysis of the demographics of website visitors.</rdfs:comment>
+        <rdfs:label>TrafficDemographics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#TransactionalKeywords -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#TransactionalKeywords">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PrimaryKeywords"/>
+        <rdfs:comment>Keywords with a transactional intent.</rdfs:comment>
+        <rdfs:label>TransactionalKeywords</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#UserExperienceOptimization -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#UserExperienceOptimization">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+        <rdfs:comment>Enhancements to improve user interaction and satisfaction.</rdfs:comment>
+        <rdfs:label>UserExperienceOptimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#UserGeneratedContent -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#UserGeneratedContent">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+        <rdfs:comment>Content created by users of the website.</rdfs:comment>
+        <rdfs:label>UserGeneratedContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#VoiceSearchOptimization -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#VoiceSearchOptimization">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+        <rdfs:comment>Optimization techniques for improving visibility in voice search results.</rdfs:comment>
+        <rdfs:label>VoiceSearchOptimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Webpage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Webpage">
+        <rdfs:comment>An individual page on a website, which can be optimized for better search engine rankings.</rdfs:comment>
+        <rdfs:label>Webpage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#WebsitePerformanceStatus -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#WebsitePerformanceStatus">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <rdfs:comment>Overall performance status of a website.</rdfs:comment>
+        <rdfs:label>WebsitePerformanceStatus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Wesbite -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#Wesbite">
+        <rdfs:comment>A collection of related web pages managed by a single entity, serving as the primary focus of SEO efforts.</rdfs:comment>
+        <rdfs:label>Wesbite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#404ErrorPage -->
+
+    <owl:Class rdf:about="https://fahad-maqbool.github.io/SEOOnt#404ErrorPage">
+        <rdfs:subClassOf rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+        <rdfs:comment>Page shown when a requested page is not found.</rdfs:comment>
+        <rdfs:label>404ErrorPage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#Daraz -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#Daraz">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#EcommerceWebsite"/>
+        <untitled-ontology-20:websiteURL>https://www.daraz.pk</untitled-ontology-20:websiteURL>
+        <rdfs:comment>The primary entity representing the Daraz e-commerce platform.</rdfs:comment>
+        <rdfs:label>Daraz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazAdvertisingTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazAdvertisingTraffic">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <untitled-ontology-20:networks>4</untitled-ontology-20:networks>
+        <untitled-ontology-20:publishers>42</untitled-ontology-20:publishers>
+        <untitled-ontology-20:topPublishers>37 others : 19.7%</untitled-ontology-20:topPublishers>
+        <untitled-ontology-20:topPublishers>Aniwave.to : 8.69%</untitled-ontology-20:topPublishers>
+        <untitled-ontology-20:topPublishers>Poki.com : 3.45%</untitled-ontology-20:topPublishers>
+        <untitled-ontology-20:topPublishers>Start a trial : 57.46%</untitled-ontology-20:topPublishers>
+        <untitled-ontology-20:topPublishers>Start a trial : 8.69%</untitled-ontology-20:topPublishers>
+        <untitled-ontology-20:topPublishers>anix.to : 2.01%</untitled-ontology-20:topPublishers>
+        <rdfs:comment>Traffic generated to Daraz through advertising campaigns.</rdfs:comment>
+        <rdfs:label>DarazAdvertisingTraffic
+</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazAgeDistribution -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazAgeDistribution">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TrafficDemographics"/>
+        <untitled-ontology-20:ageGroup>18-24 : 23.48%</untitled-ontology-20:ageGroup>
+        <untitled-ontology-20:ageGroup>25-34 : 35.97%</untitled-ontology-20:ageGroup>
+        <untitled-ontology-20:ageGroup>35-44 : 20.82%</untitled-ontology-20:ageGroup>
+        <untitled-ontology-20:ageGroup>45-54 : 8.39%</untitled-ontology-20:ageGroup>
+        <untitled-ontology-20:ageGroup>55-64 : 6.17%</untitled-ontology-20:ageGroup>
+        <untitled-ontology-20:ageGroup>65+  : 5.18%</untitled-ontology-20:ageGroup>
+        <rdfs:comment>The distribution of Daraz users across different age groups.</rdfs:comment>
+        <rdfs:label>DarazAgeDistribution</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazAuthorityScore -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazAuthorityScore">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <untitled-ontology-20:authority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</untitled-ontology-20:authority>
+        <rdfs:comment>A metric indicating the overall authority and credibility of Daraz&apos;s domain.</rdfs:comment>
+        <rdfs:label>DarazAuthorityScore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazBacklinkAnalytics -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazBacklinkAnalytics">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalytics"/>
+        <untitled-ontology-20:backlinkTypes>Form : less than 1%</untitled-ontology-20:backlinkTypes>
+        <untitled-ontology-20:backlinkTypes>Frame : less than 1%</untitled-ontology-20:backlinkTypes>
+        <untitled-ontology-20:backlinkTypes>Image : 28%</untitled-ontology-20:backlinkTypes>
+        <untitled-ontology-20:backlinkTypes>Text : 72%</untitled-ontology-20:backlinkTypes>
+        <rdfs:comment>Analysis of backlinks pointing to Daraz&apos;s website.</rdfs:comment>
+        <rdfs:label>DarazBacklinkAnalytics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazBounceRate -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazBounceRate">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <untitled-ontology-20:bounceRate>13.7M</untitled-ontology-20:bounceRate>
+        <rdfs:comment>The percentage of visitors who leave the Daraz site after viewing only one page.</rdfs:comment>
+        <rdfs:label>DarazBounceRate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazCommercialKeywords -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazCommercialKeywords">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CommercialKeywords"/>
+        <untitled-ontology-20:keywordsCount>27K</untitled-ontology-20:keywordsCount>
+        <untitled-ontology-20:keywordsTraffic>4K</untitled-ontology-20:keywordsTraffic>
+        <rdfs:comment>Keywords associated with commercial intent used in Daraz&apos;s SEO strategy.</rdfs:comment>
+        <rdfs:label>DarazCommercialKeywords</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazFollowLinks -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazFollowLinks">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkTypes"/>
+        <untitled-ontology-20:links>Follow : 8.68M</untitled-ontology-20:links>
+        <rdfs:comment>Links from other websites that pass SEO value to Daraz&apos;s domain.</rdfs:comment>
+        <rdfs:label>DarazFollowLinks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazGenderDistribution -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazGenderDistribution">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TrafficDemographics"/>
+        <untitled-ontology-20:genderSegment>Female : 23.6%</untitled-ontology-20:genderSegment>
+        <untitled-ontology-20:genderSegment>Male : 76.4%</untitled-ontology-20:genderSegment>
+        <rdfs:comment>The distribution of Daraz users across different gender categories.</rdfs:comment>
+        <rdfs:label>DarazGenderDistribution</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazInformationalKeywords -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazInformationalKeywords">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#InformationalKeywords"/>
+        <untitled-ontology-20:keywordsCount>42K</untitled-ontology-20:keywordsCount>
+        <untitled-ontology-20:keywordsTraffic>5.2K</untitled-ontology-20:keywordsTraffic>
+        <rdfs:comment>Keywords associated with informational intent used in Daraz&apos;s SEO strategy.</rdfs:comment>
+        <rdfs:label>DarazInformationalKeywords</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazKeywords -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazKeywords">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+        <untitled-ontology-20:keywordsTraffic>17.9K</untitled-ontology-20:keywordsTraffic>
+        <rdfs:comment>Keywords relevant to Daraz&apos;s online presence and SEO strategy.</rdfs:comment>
+        <rdfs:label>DarazKeywords</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazNavigationalKeywords -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazNavigationalKeywords">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#NavigationalKeywords"/>
+        <untitled-ontology-20:keywordsCount>5K</untitled-ontology-20:keywordsCount>
+        <untitled-ontology-20:keywordsTraffic>31.4K</untitled-ontology-20:keywordsTraffic>
+        <rdfs:comment>Keywords used by users intending to navigate specifically to Daraz&apos;s website.</rdfs:comment>
+        <rdfs:label>DarazNavigationalKeywords</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazNoFollowLinks -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazNoFollowLinks">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#LinkTypes"/>
+        <untitled-ontology-20:links>NoFollow : 5.16M</untitled-ontology-20:links>
+        <rdfs:comment>Links from other websites that do not pass SEO value to Daraz&apos;s domain.</rdfs:comment>
+        <rdfs:label>DarazNoFollowLinks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazOrganicCompetitors -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazOrganicCompetitors">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+        <untitled-ontology-20:organicCompetitors>OLX.com.pk</untitled-ontology-20:organicCompetitors>
+        <untitled-ontology-20:organicCompetitors>Priceoye.pk</untitled-ontology-20:organicCompetitors>
+        <untitled-ontology-20:organicCompetitors>mega.pk</untitled-ontology-20:organicCompetitors>
+        <untitled-ontology-20:organicCompetitors>naheed.pk</untitled-ontology-20:organicCompetitors>
+        <untitled-ontology-20:organicCompetitors>propakistani.pk</untitled-ontology-20:organicCompetitors>
+        <untitled-ontology-20:organicCompetitors>servis.pk</untitled-ontology-20:organicCompetitors>
+        <rdfs:comment>Other websites competing with Daraz in organic search rankings.</rdfs:comment>
+        <rdfs:label>DarazOrganicCompetitors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazOrganicSearchTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazOrganicSearchTraffic">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+        <untitled-ontology-20:searchTraffic>40.8K</untitled-ontology-20:searchTraffic>
+        <rdfs:comment>Traffic to Daraz&apos;s website generated from organic search results.</rdfs:comment>
+        <rdfs:label>DarazOrganicSearchTraffic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazOrganicTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazOrganicTraffic">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#OrganicTraffic"/>
+        <untitled-ontology-20:organicTraffic>99.96%</untitled-ontology-20:organicTraffic>
+        <rdfs:comment>Overall traffic to Daraz&apos;s website generated through organic search.</rdfs:comment>
+        <rdfs:label>DarazOrganicTraffic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazPaidTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazPaidTraffic">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#PaidTraffic"/>
+        <untitled-ontology-20:paidTraffic>0.04%</untitled-ontology-20:paidTraffic>
+        <rdfs:comment>Traffic to Daraz&apos;s website generated through paid advertising.</rdfs:comment>
+        <rdfs:label>DarazPaidTraffic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazReferralWebTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazReferralWebTraffic">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <untitled-ontology-20:referringWebsites>39</untitled-ontology-20:referringWebsites>
+        <untitled-ontology-20:topReferrals>33 Others : 24.99%</untitled-ontology-20:topReferrals>
+        <untitled-ontology-20:topReferrals>Start a trial : 41.94%</untitled-ontology-20:topReferrals>
+        <untitled-ontology-20:topReferrals>Start a trial : 8.31%</untitled-ontology-20:topReferrals>
+        <untitled-ontology-20:topReferrals>Start a trial : 9.31%</untitled-ontology-20:topReferrals>
+        <untitled-ontology-20:topReferrals>daraz.com : 3.74%</untitled-ontology-20:topReferrals>
+        <untitled-ontology-20:topReferrals>daraz.com.np : 4.99%</untitled-ontology-20:topReferrals>
+        <untitled-ontology-20:topReferrals>realme.com : 6.71%</untitled-ontology-20:topReferrals>
+        <rdfs:comment>Traffic referred to Daraz&apos;s website from other domains.</rdfs:comment>
+        <rdfs:label>DarazReferralWebTraffic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazReferringDomains -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazReferringDomains">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains"/>
+        <untitled-ontology-20:rootDomain>amco.xyz</untitled-ontology-20:rootDomain>
+        <untitled-ontology-20:rootDomain>arah.info</untitled-ontology-20:rootDomain>
+        <untitled-ontology-20:rootDomain>bidoonessma.com</untitled-ontology-20:rootDomain>
+        <untitled-ontology-20:rootDomain>idsitus.com</untitled-ontology-20:rootDomain>
+        <untitled-ontology-20:rootDomain>klga.xyz</untitled-ontology-20:rootDomain>
+        <rdfs:comment>Domains that refer traffic to Daraz&apos;s website.</rdfs:comment>
+        <rdfs:label>DarazReferringDomains</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazSocialMediaTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazSocialMediaTraffic">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <untitled-ontology-20:networks>16</untitled-ontology-20:networks>
+        <untitled-ontology-20:socialNetworkDistribution>Facebook : 11.35%</untitled-ontology-20:socialNetworkDistribution>
+        <untitled-ontology-20:socialNetworkDistribution>Instagram : 8.12%</untitled-ontology-20:socialNetworkDistribution>
+        <untitled-ontology-20:socialNetworkDistribution>Others : 3.43%</untitled-ontology-20:socialNetworkDistribution>
+        <untitled-ontology-20:socialNetworkDistribution>Twitter : 5.24%</untitled-ontology-20:socialNetworkDistribution>
+        <untitled-ontology-20:socialNetworkDistribution>Whatsapp : 8.96%</untitled-ontology-20:socialNetworkDistribution>
+        <untitled-ontology-20:socialNetworkDistribution>Youtube : 62.9%</untitled-ontology-20:socialNetworkDistribution>
+        <rdfs:comment>Traffic to Daraz&apos;s website originating from social media platforms.</rdfs:comment>
+        <rdfs:label>DarazSocialMediaTraffic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazTargetAudience -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazTargetAudience">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <untitled-ontology-20:topCategories>ComputerElectronics &amp;Technology</untitled-ontology-20:topCategories>
+        <untitled-ontology-20:topCategories>FileSharing&amp;Hosting</untitled-ontology-20:topCategories>
+        <untitled-ontology-20:topCategories>Programming&amp;DevlopersSoftware</untitled-ontology-20:topCategories>
+        <untitled-ontology-20:topCategories>VideoGames</untitled-ontology-20:topCategories>
+        <untitled-ontology-20:topTopics>Google</untitled-ontology-20:topTopics>
+        <untitled-ontology-20:topTopics>News</untitled-ontology-20:topTopics>
+        <untitled-ontology-20:topTopics>Online</untitled-ontology-20:topTopics>
+        <untitled-ontology-20:topTopics>Pakistan</untitled-ontology-20:topTopics>
+        <untitled-ontology-20:topTopics>Search</untitled-ontology-20:topTopics>
+        <rdfs:comment>The specific demographic groups targeted by Daraz&apos;s marketing efforts.</rdfs:comment>
+        <rdfs:label>DarazTargetAudience</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazTechnologyStack -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazTechnologyStack">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <rdfs:comment>The collection of technologies used to build and run the Daraz platform.</rdfs:comment>
+        <rdfs:label>DarazTechnologyStack</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazTrafficSources -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazTrafficSources">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+        <untitled-ontology-20:trafficSources>Direct : 56.03%</untitled-ontology-20:trafficSources>
+        <untitled-ontology-20:trafficSources>Display : 1.75%</untitled-ontology-20:trafficSources>
+        <untitled-ontology-20:trafficSources>Mail : 0.97%</untitled-ontology-20:trafficSources>
+        <untitled-ontology-20:trafficSources>OrganicSearch : 36.99%</untitled-ontology-20:trafficSources>
+        <untitled-ontology-20:trafficSources>PaidSearch : 0.02%</untitled-ontology-20:trafficSources>
+        <untitled-ontology-20:trafficSources>Refferals : 0.95%</untitled-ontology-20:trafficSources>
+        <untitled-ontology-20:trafficSources>Social : 3.3%</untitled-ontology-20:trafficSources>
+        <rdfs:comment>The various sources from which Daraz receives website traffic.</rdfs:comment>
+        <rdfs:label>DarazTrafficSources</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://fahad-maqbool.github.io/SEOOnt#DarazTransactionalKeywords -->
+
+    <owl:NamedIndividual rdf:about="https://fahad-maqbool.github.io/SEOOnt#DarazTransactionalKeywords">
+        <rdf:type rdf:resource="https://fahad-maqbool.github.io/SEOOnt#TransactionalKeywords"/>
+        <untitled-ontology-20:keywordsTraffic>63.2K</untitled-ontology-20:keywordsTraffic>
+        <untitled-ontology-20:keywordsTraffic>9.5K</untitled-ontology-20:keywordsTraffic>
+        <rdfs:comment>Keywords associated with transactional intent used in Daraz&apos;s SEO strategy.</rdfs:comment>
+        <rdfs:label>DarazTransactionalKeywords</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#AboutUsPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ArticlePage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#CategoryPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ContactPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#EventPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#FAQPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ForumPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#HomePage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LandingPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LoginPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PrivacyPolicyPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ProductPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SearchResultPage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#404ErrorPage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Analytics"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#AnchorText"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#CompetitorAnalysis"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Content"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#KeywordRanking"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Keywords"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingStrategies"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkTypes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Analytics"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#BacklinkAnalysis"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ContentAnalysis"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#KeywordAnalysis"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#TechnicalAnalysis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#BrokenLinkBuilding"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ContentMarketing"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#EmailOutreach"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PublicRelations"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#CommercialKeywords"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#InformationalKeywords"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#NavigationalKeywords"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#TransactionalKeywords"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ConversionRateOptimization"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#CoreWebVitals"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#IndexCoverageErrors"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#IndexedPages"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#KeywordRankings"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#OrganicTrafficConversions"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ReferringDomains"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SearchVisibility"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#WebsitePerformanceStatus"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#DirectoryLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#EditorialLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Follow"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ForumLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#NoFollow"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PromotionalLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SocialMediaLinks"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#DirectoryLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#EditorialLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ForumLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PromotionalLinks"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SocialMediaLinks"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#DynamicContent"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LocalizedContent"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#MultimediaContent"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#StaticContent"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#TextContent"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#UserGeneratedContent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#EcommerceWebsite"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#EducationalWebsites"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#InformationalWebsite"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PortfolioWebsites"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SocialNetworkingWebsites"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#ExternalAnchorText"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#GenericAnchorText"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#InternalAnchorText"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#InternationalSEO"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LocalSEO"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#OffPageOptimization"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#OnPageOptimization"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#TechnicalSEO"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#VoiceSearchOptimization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#LinkBuildingTypes"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#PerformanceMetrics"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SEO"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#SERPFeatures"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Traffic"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Webpage"/>
+            <rdf:Description rdf:about="https://fahad-maqbool.github.io/SEOOnt#Wesbite"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
